@@ -3,7 +3,7 @@ ec2-hosts() {
 }
 
 ec2-host() {
-  hostname="$1"
+  local hostname="$1"
   if [ -z "$hostname" ]; then
     echo "Please specify a Name"
     return
